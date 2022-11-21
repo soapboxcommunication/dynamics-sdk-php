@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ExpiredProcess File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class ExpiredProcess extends Entity
      *
      * @var string
      */
-    static $entity = 'expiredprocesses';
+    protected $entity = 'expiredprocesses';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class ExpiredProcess extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'businessprocessflowinstanceid';
+    protected $primaryKey = 'businessprocessflowinstanceid';
 }

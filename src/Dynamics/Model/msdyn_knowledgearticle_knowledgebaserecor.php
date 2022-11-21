@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * msdyn_knowledgearticle_knowledgebaserecor File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class msdyn_knowledgearticle_knowledgebaserecor extends Entity
      *
      * @var string
      */
-    static $entity = 'msdyn_knowledgearticle_knowledgebaserecorset';
+    protected $entity = 'msdyn_knowledgearticle_knowledgebaserecorset';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class msdyn_knowledgearticle_knowledgebaserecor extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'msdyn_knowledgearticle_knowledgebaserecorid';
+    protected $primaryKey = 'msdyn_knowledgearticle_knowledgebaserecorid';
 }

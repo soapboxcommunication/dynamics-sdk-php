@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ProductAssociation File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class ProductAssociation extends Entity
      *
      * @var string
      */
-    static $entity = 'productassociations';
+    protected $entity = 'productassociations';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class ProductAssociation extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'productassociationid';
+    protected $primaryKey = 'productassociationid';
 }

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * SubscriptionManuallyTrackedObject File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class SubscriptionManuallyTrackedObject extends Entity
      *
      * @var string
      */
-    static $entity = 'subscriptionmanuallytrackedobjects';
+    protected $entity = 'subscriptionmanuallytrackedobjects';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class SubscriptionManuallyTrackedObject extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'subscriptionmanuallytrackedobjectid';
+    protected $primaryKey = 'subscriptionmanuallytrackedobjectid';
 }

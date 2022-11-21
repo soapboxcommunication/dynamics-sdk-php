@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DynamicPropertyOptionSetItem File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class DynamicPropertyOptionSetItem extends Entity
      *
      * @var string
      */
-    static $entity = 'dynamicpropertyoptionsetitems';
+    protected $entity = 'dynamicpropertyoptionsetitems';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class DynamicPropertyOptionSetItem extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'dynamicpropertyoptionsetvalueid';
+    protected $primaryKey = 'dynamicpropertyoptionsetvalueid';
 }
