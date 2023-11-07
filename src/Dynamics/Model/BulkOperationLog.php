@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * BulkOperationLog File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class BulkOperationLog extends Entity
      *
      * @var string
      */
-    static $entity = 'bulkoperationlogs';
+    protected $entity = 'bulkoperationlogs';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class BulkOperationLog extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'bulkoperationlogid';
+    protected $primaryKey = 'bulkoperationlogid';
 }

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MarketingListMember File
 * PHP version 7
 *
@@ -20,10 +20,10 @@ use SaintSystems\OData\Entity;
 * MarketingListMember class
 *
 * ListMember entity
-* 
-* NOTE: Because `list` is a reserved keyword in PHP, we rename the 
+*
+* NOTE: Because `list` is a reserved keyword in PHP, we rename the
 * Dynamics `List` entities (List, ListMember) to `MarketingList`
-* and `MarketingListMember` to avoid conflicts.  
+* and `MarketingListMember` to avoid conflicts.
 *
 * @category  Model
 * @package   Microsoft.Dynamics
@@ -38,7 +38,7 @@ class MarketingListMember extends Entity
      *
      * @var string
      */
-    static $entity = 'listmembers';
+    protected $entity = 'listmembers';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -46,5 +46,5 @@ class MarketingListMember extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'listmemberid';
+    protected $primaryKey = 'listmemberid';
 }

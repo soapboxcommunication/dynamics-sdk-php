@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ProductPriceLevel File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class ProductPriceLevel extends Entity
      *
      * @var string
      */
-    static $entity = 'productpricelevels';
+    protected $entity = 'productpricelevels';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class ProductPriceLevel extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'productpricelevelid';
+    protected $primaryKey = 'productpricelevelid';
 }

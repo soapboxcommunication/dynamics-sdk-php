@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * BookableResourceBookingHeader File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class BookableResourceBookingHeader extends Entity
      *
      * @var string
      */
-    static $entity = 'bookableresourcebookingheaders';
+    protected $entity = 'bookableresourcebookingheaders';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class BookableResourceBookingHeader extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'bookableresourcebookingheaderid';
+    protected $primaryKey = 'bookableresourcebookingheaderid';
 }

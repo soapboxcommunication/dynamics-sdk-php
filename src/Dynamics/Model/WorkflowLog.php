@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Saint Systems, LLC.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * WorkflowLog File
 * PHP version 7
 *
@@ -34,7 +34,7 @@ class WorkflowLog extends Entity
      *
      * @var string
      */
-    static $entity = 'workflowlogs';
+    protected $entity = 'workflowlogs';
 
     /**
      * The name of the attribute that is the primary id for the entity.
@@ -42,5 +42,5 @@ class WorkflowLog extends Entity
      *
      * @var string
      */
-    static $primaryKey = 'workflowlogid';
+    protected $primaryKey = 'workflowlogid';
 }

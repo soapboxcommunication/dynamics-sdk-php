@@ -1,9 +1,9 @@
-<?php 
+<?php
 /**
-* Copyright (c) Saint Systems, LLC.  All Rights Reserved.  
-* Licensed under the MIT License.  See License in the project root 
+* Copyright (c) Saint Systems, LLC.  All Rights Reserved.
+* Licensed under the MIT License.  See License in the project root
 * for license information.
-* 
+*
 * DynamicsCollectionRequest File
 * PHP version 7
 *
@@ -57,7 +57,7 @@ class DynamicsCollectionRequest extends DynamicsRequest
     * @var string
     */
     protected $originalEndpoint;
-    
+
     /**
     * The return type that the user specified
     *
@@ -68,7 +68,7 @@ class DynamicsCollectionRequest extends DynamicsRequest
     /**
     * Constructs a new DynamicsCollectionRequest object
     *
-    * @param string $requestType The HTTP verb for the 
+    * @param string $requestType The HTTP verb for the
     *                            request ("GET", "POST", "PUT", etc.)
     * @param string $endpoint    The URI of the endpoint to hit
     * @param string $accessToken A valid access token
@@ -78,10 +78,10 @@ class DynamicsCollectionRequest extends DynamicsRequest
     public function __construct($requestType, $endpoint, $accessToken, $instanceUrl, $apiVersion)
     {
         parent::__construct(
-            $requestType, 
-            $endpoint, 
-            $accessToken, 
-            $instanceUrl, 
+            $requestType,
+            $endpoint,
+            $accessToken,
+            $instanceUrl,
             $apiVersion
         );
         $this->end = false;
@@ -96,10 +96,10 @@ class DynamicsCollectionRequest extends DynamicsRequest
     {
         $query = '$count=true';
         $request = new DynamicsRequest(
-            $this->requestType, 
-            $this->endpoint . $this->getConcatenator() . $query, 
-            $this->accessToken, 
-            $this->instanceUrl, 
+            $this->requestType,
+            $this->endpoint . $this->getConcatenator() . $query,
+            $this->accessToken,
+            $this->instanceUrl,
             $this->apiVersion
         );
         $result = $request->execute()->getBody();
@@ -150,12 +150,12 @@ class DynamicsCollectionRequest extends DynamicsRequest
 
     /**
     * Sets the required query information to get a new page
-    * 
+    *
     * @param bool $prev Set to true for the previous page
     *
     * @return DynamicsCollectionRequest
     */
-    public function setPageCallInfo($prev) 
+    public function setPageCallInfo($prev)
     {
         // Store these to add temporary query data to request
         $this->originalReturnType = $this->returnType;
